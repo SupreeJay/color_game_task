@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#colorBox {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    line-height: 200px; /* Centers the text vertically */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff; /* You can leave it white or choose any neutral color */
+}
+
+#colorOptions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:focus {
+    outline: none;
+}
+
+#gameStatus {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#score {
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    #colorBox {
+        width: 150px;
+        height: 150px;
+    }
+
+    #colorOptions {
+        flex-direction: column;
+    }
+}
